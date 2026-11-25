@@ -23,9 +23,26 @@
 - One specific detail: count to **47** + whispering **"sweetie"** to the router.
 - Candidates tried and dropped: see STRATEGY.md.
 
+## v1-rev1 fix (25 Nov 17:17–17:21 WIB)
+
+- v1 commit 5b867443 FAILED the kit check on `thinking_revised` only
+  (main.py written in one shot). Fix: added a real `validate_line()`
+  enforcing the 1–199 char single-line output contract + docstring note;
+  the LINE itself is byte-identical (145 chars, verified).
+- New commit **810d06173255055d36e2635761c133567e0616b9**, pushed.
+  Re-bundle (builder session + fix session, 1 usage row attached),
+  kit check **ok=true, failed=[]** — thinking_revised pass (main.py
+  final content from 4 write/edit messages), thinking_reproduces 91.8%.
+- Quota at submit: can_submit true, day cap 5/5 left, hard limit 40/40,
+  entry_fee null. Field: 442 entries at submit (was 0 at discovery).
+
 ## Live score / rank
 
-- Not submitted yet (build only; needs Joni's 'Setuju' on this exact entry).
-- After submit: record live score + rank here, and read the judge's hidden
-  reasons (GET /api/submissions/<id>, scores[0].judge.heat.matches[].calls[].reason)
-  before building any v2.
+- **SUBMITTED 25 Nov 17:21 WIB** — submission
+  **01a21238-f8e7-71b6-8369-bd69459a8329**, stage **checked**
+  (all server checks pass). Claim code saved to
+  ~/.config/makefun/u-motasimfuad-have-you-tried-turning-it-off-154a938b-submission.json (0600).
+- Blind rounds: NO live score yet. Round 1 cutoff 20:43 WIB 25 Nov;
+  check `makefun rounds <slug>` after it is judged, then read the
+  judge's hidden reasons (GET /api/submissions/<id>,
+  scores[0].judge.heat.matches[].calls[].reason) before building any v2.
