@@ -16,9 +16,9 @@ import os
 import stat
 
 LINE = (
-    "Okay, deep breath: unplug the router, count to 47, plug it back in "
-    "whispering 'you're doing amazing, sweetie.' "
-    "It just needs to feel appreciated."
+    "Because you called back within 30 seconds, our system has marked "
+    "your issue resolved. I'll close the ticket and email a survey. "
+    "Please be brutally honest!"
 )
 
 
